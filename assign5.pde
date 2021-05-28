@@ -300,7 +300,7 @@ void draw() {
 			image(cabbage, cabbageX[i], cabbageY[i]);
 
 			// detect collision
-			if(isHit(cabbageX[i], cabbageY[i], cabbage.width, cabbage.height,
+			if(playerHealth < PLAYER_MAX_HEALTH && isHit(cabbageX[i], cabbageY[i], cabbage.width, cabbage.height,
                playerX, playerY, SOIL_SIZE, SOIL_SIZE)) { 
 
 				playerHealth ++;
